@@ -1,0 +1,91 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #121212;
+  color: #f5f5f5;
+}
+header {
+  background: #000;
+  color: #FFD60A;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header h1 {
+  margin: 0;
+}
+button {
+  cursor: pointer;
+  padding: .5rem .9rem;
+  border-radius: 6px;
+  border: none;
+  background: #FFD60A;
+  color: #000;
+  font-weight: bold;
+}
+button:hover {
+  background: #e6c200;
+}
+.container {
+  max-width: 1100px;
+  margin: 1rem auto;
+  padding: 1rem;
+  background: #1c1c1c;
+  border-radius: 8px;
+}
+.filter {
+  margin-bottom: 1rem;
+  display: flex;
+  gap: .5rem;
+  flex-wrap: wrap;
+}
+.filter button {
+  border: 2px solid #FFD60A;
+  background: transparent;
+  color: #FFD60A;
+}
+.filter button.active {
+  background: #FFD60A;
+  color: #000;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 1rem;
+}
+.card {
+  border: 1px solid #333;
+  border-radius: 8px;
+  padding: .5rem;
+  text-align: center;
+  background: #262626;
+}
+.card img {
+  max-width: 100%;
+  height: 160px;
+  object-fit: contain;
+  border-radius: 6px;
+  background: #fff;
+}
+.cart {
+  margin-top: 1rem;
+  padding: 1rem;
+  border: 1px solid #FFD60A;
+  border-radius: 6px;
+  background: #262626;
+}
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  margin: .5rem 0;
+}
+input {
+  width: 100%;
+  padding: .5rem;
+  margin: .3rem 0;
+  border: 1px solid #FFD60A;
+  border-radius: 4px;
+  background: #1c1c1c;
+  color: #fff;
+}
